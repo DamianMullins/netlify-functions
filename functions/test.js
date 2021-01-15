@@ -4,7 +4,6 @@ const headers = {
 };
 
 exports.handler = async (event, context) => {
-    throw new Error('saaa')
     if (!event.body || event.httpMethod !== 'POST') {
         return {
             statusCode: 400,
